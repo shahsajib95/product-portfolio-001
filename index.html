@@ -67,7 +67,7 @@
     <div class="container">
       <h1>About</h1>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="aboutText">
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
@@ -76,8 +76,8 @@
             <button class="click" type="button">Download CV</button>
           </div>
         </div>
-        <div class="col-md-6">
-          <img src="img/about.png" alt="" >
+        <div class="col-md-4">
+          <img src="img/about.png" alt="" class="w-100" >
         </div>
       </row>
     </div>
@@ -141,27 +141,32 @@
 
 <section class="portfolio" id="portfolio">
   <h1 class=text-center>Portfolio</h1>
+  <br>
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/portfolio/port (1).jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src="img/portfolio/port (2).jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src="img/portfolio/port (3).jpg" alt="">
+    <div class="d-flex justify-content-center" id="portfolioBox">
+    <button id="website">WEBSITE</button>
+    <button  id="graphic">GRAPHICS</button>
+    </div>
+    <br>
+    <div class="row"  id="graphicContent">
+
+        <img src="img/portfolio/port (1).jpg" alt="" class="w-25" >
+
+
+        <img src="img/portfolio/port (2).jpg" alt="" class="w-25">
+
+      
+        <img src="img/portfolio/port (3).jpg" alt="" class="w-25">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/portfolio/port (4).jpg" alt="">
-      </div>  
-      <div class="col-md-4">
-        <img src="img/portfolio/port (5).jpg" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src="img/portfolio/port (6).jpg" alt="">
+    <div class="row" id="websiteContent">
+      
+        <img src="img/portfolio/port (4).jpg" alt="" class="w-25">
+
+
+        <img src="img/portfolio/port (5).jpg" alt="" class="w-25">
+  
+        <img src="img/portfolio/port (6).jpg" alt="" class="w-25">
       </div>
     </div>
   </div> 
@@ -212,10 +217,11 @@
 
 <section class="contact" id="contact">
   <h1 class="text-center">Contact</h1>
+  <br>
   <div class="container">
     <div class="contactDetails">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <h2>Let's discuss project</h2>
         <br>
         <input type="text">
@@ -234,7 +240,7 @@
 
 
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <img src="img/contact.png" class="w-100">
       </div>
     </div>
@@ -247,6 +253,24 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+
+<script>
+
+  //portfolio
+
+  const website = document.getElementById("website");
+  const websiteContent = document.getElementById("websiteContent");
+
+  const graphic = document.getElementById("graphic");
+  const graphicContent = document.getElementById("graphicContent");
+     website.addEventListener("click" , function(){
+      websiteContent.style.display="block", website.style.backgroundColor="rgb(196, 196, 196)", graphic.style.backgroundColor="#575A89", graphicContent.style.display="none";
+     })
+
+     graphic.addEventListener("click" , function() {
+      graphicContent.style.display="block", graphic.style.backgroundColor="rgb(196, 196, 196)", website.style.backgroundColor="#575A89", websiteContent.style.display="none";
+     }) 
+</script>
 
 </body>
 </html>

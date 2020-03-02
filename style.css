@@ -6,11 +6,15 @@ section{
     padding: 5%;
 }
 h1{
-    font-size: 3em;
+    font-size: 30px;
     font-weight: 700;
 }
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
 p{
-    font-size: 1.5em;
+    font-size: 20px;
     letter-spacing: 0.02em;
     text-align: justify;
 }
@@ -50,12 +54,9 @@ p{
     background-color: #F0F0F4;
 }
 .aboutText{
-    margin-top: 30%;
+    margin-top: 20%;
 }
-.about img{
-    width: 95%;
-    margin: 5%;
-}
+
 #skillBox{
     border-top: 20px solid  #575A89;
     border-right: 2px solid #575A89;
@@ -68,11 +69,32 @@ p{
     background-color: #575A89;
     color: #F0F0F4;
 }
-.portfolio img{
-    width: 100%;
-    margin-top: 10%;   
+#website, #graphic{
+    margin-left: 1%;
+    padding: 0.5% 2%;
+    background-color: #575A89;
+    color: #F0F0F4;
+    border: none;
 }
-
+#website:hover, #graphic:hover{
+    background-color: rgb(196, 196, 196);
+}
+#portfolioBox h3:hover{
+    background-color: rgb(167, 167, 167);
+    color: #F0F0F4;
+    cursor: pointer;
+}
+.portfolio img{
+    float: left;
+    width: 20%;
+    margin: 3% 0 3% 8%;
+}
+#websiteContent{
+    display: none;
+}
+.client{
+    display: inline-block;
+}
 .carousel-item img {
     margin-left: 40%;
     width: 20%;
