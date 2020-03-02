@@ -1,0 +1,112 @@
+.body{
+    font-family: 'Lato', ;
+    background-color: #FFFEFF;
+}
+section{
+    padding: 5%;
+}
+h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+p{
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+.navbar {
+    background-color: white!important;
+}
+.navbar-nav li{
+    margin-left: 20%;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color: #575A89!important;
+    border-bottom: 2px solid #575A89;
+}
+.bannerText{
+    margin-left: 10%;
+}
+.banner img{
+    width: 100%;
+}
+.click{
+    padding: 1% 15%;
+    font-size: 1.3em;
+    border: 2px solid #575A89;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.click:hover{
+    color: #FFFEFF;
+    background-color: #575A89;
+}
+.about{
+    background-color: #F0F0F4;
+}
+.aboutText{
+    margin-top: 30%;
+}
+.about img{
+    width: 95%;
+    margin: 5%;
+}
+#skillBox{
+    border-top: 20px solid  #575A89;
+    border-right: 2px solid #575A89;
+    border-bottom: 2px solid #575A89;
+    border-left: 2px solid #575A89;
+    padding: 10%;
+    margin: 10%;
+}
+#skillBox:hover{
+    background-color: #575A89;
+    color: #F0F0F4;
+}
+.portfolio img{
+    width: 100%;
+    margin-top: 10%;   
+}
+
+.carousel-item img {
+    margin-left: 40%;
+    width: 20%;
+    border-radius: 50%;
+}
+.carousel-item p{
+    padding: 0 5% 0 5%;
+    text-align: justify;
+}
+input[type]{
+    padding: 2% 20%;
+}
+.mail{
+    padding: 2% 7%;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.mail:hover{
+    background-color: #575A89;
+}
+
+.fa{
+    font-size: 1.5em;
+    border-radius: 50%;
+    padding: 3%;
+    margin-left: 2%;
+    border: 2px solid #575A89; 
+    background-color: #575A89;
+    color: #FFFEFF;
+}
+.fa:hover{
+    background-color: white;
+    color: #575A89;
+}
+
+
