@@ -2,11 +2,12 @@
     font-family: 'Lato', ;
     background-color: #FFFEFF;
 }
+
 section{
     padding: 5%;
 }
 h1{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
 }
 h3{
@@ -21,8 +22,11 @@ p{
 .navbar {
     background-color: white!important;
 }
+#navbarNav{
+    margin-left: 30%;
+}
 .navbar-nav li{
-    margin-left: 20%;
+    margin-left: 7%;
     font-weight: 500;
 }
 .navbar-light .navbar-nav .nav-link{
@@ -54,7 +58,8 @@ p{
     background-color: #F0F0F4;
 }
 .aboutText{
-    margin-top: 20%;
+    margin-top: 10%;
+    padding-bottom: 3%;
 }
 
 #skillBox{
@@ -130,5 +135,7 @@ input[type]{
     background-color: white;
     color: #575A89;
 }
-
+.contact img{
+    margin-top: 10%;
+}
 
